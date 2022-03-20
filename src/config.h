@@ -6,13 +6,13 @@
 #define CONFIG_H
 
 // how often to backup world files (minutes)
-double worldBackupInterval = .1;
+double worldBackupInterval = 60;
 
 // enable full server backups (server must be a git repo)
 bool fullBackupsEnabled = true;
 
 // how often to backup all files (hours)
-double fullBackupInterval = .005;
+double fullBackupInterval = 6;
 
 // maximum number of backups
 int maxSaves = 2;
