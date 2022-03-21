@@ -9,7 +9,7 @@
 #include "config.h"
 
 int main(int argc, char *argv[]) {
-    double fullBackupCountReq = (worldBackupInterval * 60) / (fullBackupInterval * 60 * 60);
+    double fullBackupCountReq = (fullBackupInterval * 60 * 60) / (worldBackupInterval * 60);
     int fullBackupCount = 0;
 
     std::cout << "::Full server updates will occur every " << fullBackupCountReq << " cycles";
