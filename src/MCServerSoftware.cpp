@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
         // check for full backup and do if required
         if (fullBackupCount >= fullBackupCountReq && fullBackupsEnabled) {
             std::cout << "::Commencing full server backup...\n";
-            cmd = "git add .; git commit -m \"" + date + "\"; git push";
+            cmd = "git pull; git add .; git commit -m \"" + date + "\"; git push";
             std::system(cmd.c_str());
 
             fullBackupCount = 0;
