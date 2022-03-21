@@ -15,6 +15,6 @@ bool fullBackupsEnabled = true;
 double fullBackupInterval = 6;
 
 // maximum number of backups
-int maxSaves = 2;
+int maxSaves = 6;
 
 #endif
